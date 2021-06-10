@@ -4,6 +4,8 @@ Random-VMC is a tool to generate random MSFS2020 weather presets suitable for VF
 
 The weather should be realistic, provided that you choose a suitable preset (ie: not *Tropics* for EDDF in January).
 
+![image](https://user-images.githubusercontent.com/16707931/121594787-d3ca5300-ca3d-11eb-8a3a-8fe724fdb116.png)
+
 ## Requirements
 
 * .NET framework 4.7.2
