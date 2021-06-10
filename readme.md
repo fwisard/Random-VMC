@@ -1,8 +1,8 @@
-# random-vmc
+# Random-VMC
 
-random-vmc is a tool to generate random MSFS2020 weather presets suitable for VFR flights at low altitudes. No fog, no strong winds, and a good visibility for pleasant flights in light General Aviation airplanes.
+Random-VMC is a tool to generate random MSFS2020 weather presets suitable for VFR flights at low altitudes. No strong winds, and a good visibility for pleasant flights in light General Aviation aircrafts.
 
-The weather should be realistic, providing you choose a suitable preset (ie: not *Tropics* for EDDF in January).
+The weather should be realistic, provided that you choose a suitable preset (ie: not *Tropics* for EDDF in January).
 
 ## Requirements
 
@@ -15,9 +15,9 @@ Just run the installer.
 
 ## Configuration
 
-Set the directory where you want your presets to be generated ( *"%APPDATA%\Roaming\Microsoft Flight Simulator\Weather\Presets"* on my Steam version ) if *random-vfr* doesn't automatically detect yours. Advice: you usually don't want to give the path to the *Community* folder, presets go in their own separate place.
+Set the directory where you want your presets to be generated ( *"%APPDATA%\Roaming\Microsoft Flight Simulator\Weather\Presets"* on my Steam version ) if *Random-VMC* doesn't automatically detect yours. Advice: you usually don't want to give the path to the *Community* folder, presets go in their own separate place.
 
-*random-vfr* will remember the path you set once you have generated your first preset.
+*Random-VMC* will remember the path you set once you have generated your first preset.
 
 ## Usage
 
@@ -35,4 +35,4 @@ You can click on the logo to the see "About..." box.
 
 ## License
 
-*random-vmc* is licensed under the GPLv3 License. See the COPYING file for details.
+*Random-VMC* is licensed under the GPLv3 License. See the COPYING file for details.
