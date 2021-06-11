@@ -48,6 +48,11 @@ namespace random_vmc
             InitializeComponent();
 
             tbPath.Text = Properties.Settings.Default.PresetsPath;
+            if (Properties.Settings.Default.LastPresetNumber > 1)
+            {
+                NumPresets = Properties.Settings.Default.LastPresetNumber;
+            }
+            sldNum.Value = NumPresets;
             if (tbPath.Text == "")
             {
                 var TempPath = System.IO.Path.Combine(Environment.GetFolderPath(
@@ -313,6 +318,7 @@ namespace random_vmc
             if (Directory.Exists(tbPath.Text))
             {
                 Properties.Settings.Default.PresetsPath = tbPath.Text;
+                Properties.Settings.Default.LastPresetNumber = NumPresets;
                 Properties.Settings.Default.Save();
                 for (var i = 1; i <= NumPresets; i++)
                 {

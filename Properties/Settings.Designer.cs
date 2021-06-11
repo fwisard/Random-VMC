@@ -34,5 +34,17 @@ namespace random_vmc.Properties {
                 this["PresetsPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int LastPresetNumber {
+            get {
+                return ((int)(this["LastPresetNumber"]));
+            }
+            set {
+                this["LastPresetNumber"] = value;
+            }
+        }
     }
 }
