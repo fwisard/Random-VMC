@@ -170,18 +170,13 @@ namespace random_vmc
 
             if (Density1 > 0.5 && Rnd.NextDouble() > 0.7)
             {
-                if (Rnd.NextDouble() > 0.5)
-                {
-                    Precipitations = Rnd.NextDouble();
-                }
-                else
-                {
-                    Precipitations = Rnd.NextDouble() * 4.0;
-                }
+               
+                Precipitations = Rnd.NextDouble() * 0.4;
+               
             }
             if (Climate == "tropics" && (Density1 + Density2) > 0.4)
             {
-                Precipitations = 3.0 + (Rnd.NextDouble() * 2.0);
+                Precipitations = 0.2 + (Rnd.NextDouble() / 2.0);
                 Aerosol = Rnd.NextDouble() * 2.0;
             }
 
