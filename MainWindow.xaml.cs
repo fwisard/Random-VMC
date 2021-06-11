@@ -221,7 +221,7 @@ namespace random_vmc
                     SW.WriteLine($@"<?xml version=""1.0"" encoding=""UTF-8""?>
 <SimBase.Document Type=""WeatherPreset"" version=""1,3"">
     <Descr>AceXML Document</Descr>
-    <!-- Created by random-vmc -->
+    <!-- Created by Random-VMC {version} -->
     <WeatherPreset.Preset> 
         <Name>a-random-VMC-{Climate}-{Number:D2}</Name>
         <Image>weather/presets/live.jpg</Image>
