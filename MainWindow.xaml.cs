@@ -112,7 +112,7 @@ namespace random_vmc
                         GustProb = 0.01;
                     }
                     GustProb = 0.02; // we want a nice weather
-                    Temperature += Rnd.Next(16, 37);
+                    Temperature += Rnd.Next(22, 37); 
                     if (CoverMax == 200)
                     {
                         Aerosol = Rnd.NextDouble();
@@ -140,7 +140,7 @@ namespace random_vmc
                         CoverMin = 200;
                         CoverMax = 1000;
                     }
-                    Temperature += Rnd.Next(0, 16);
+                    Temperature += Rnd.Next(5, 19);
                     Aerosol = Rnd.NextDouble() * 13;
                     break;
 
@@ -194,7 +194,7 @@ namespace random_vmc
             var Scattering3 = Rnd.NextDouble();
 
             var Wind1Dir = Rnd.NextDouble() * 360;
-            var Wind1Speed = Rnd.NextDouble() * 15;
+            var Wind1Speed = Rnd.NextDouble() * 12;
             if (GustProb > Rnd.NextDouble())
             {
                 GustDir = (Wind1Dir - 60 + Rnd.Next(120)) % 360;
@@ -209,7 +209,7 @@ namespace random_vmc
                 GustDuration = 0;
                 GustSpeed = 0;
             }
-            var Wind2Alt = Cloud2Bot;
+            var Wind2Alt = Cloud3Bot;
             var Wind2Dir = Rnd.NextDouble() * 360;
             var Wind2Speed = Wind1Speed * (Rnd.NextDouble() + 1.5);
 
