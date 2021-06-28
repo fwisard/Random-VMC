@@ -116,7 +116,10 @@ namespace random_vmc
                         CoverMin = 0;
                         GustProb = 0.01;
                     }
-                    GustProb = 0.02; // we want a nice weather
+                    else
+                    {
+                        GustProb = 0.02; // we want a nice weather anyway
+                    }
                     Temperature += Rnd.Next(22, 37); 
                     if (CoverMax == 200)
                     {
@@ -134,7 +137,7 @@ namespace random_vmc
                        CoverMax = 200;
                        CoverMin = 0;
                    }
-                   Temperature = Rnd.Next(250, 280);
+                   Temperature = Rnd.Next(260, 280);
                     SnowCover = 0.1 + (Rnd.NextDouble() * 2.5);
                     Aerosol = Rnd.NextDouble() * 4;
                     break;
@@ -160,6 +163,16 @@ namespace random_vmc
                     {
                         Aerosol = Rnd.NextDouble() * 2;
                     }
+                    if (Rnd.NextDouble() > 0.3)
+                    {
+                        CoverMin = 0;
+                        CoverMax = 400;
+                    }
+                    else
+                    {
+                        CoverMax = 800;
+                        CoverMin = 100;
+                    }
                     break;
 
                 default:
@@ -179,10 +192,10 @@ namespace random_vmc
                 Precipitations = Rnd.NextDouble() * 0.4;
                
             }
-            if (Climate == "tropics" && (Density1 + Density2) > 0.4)
+            if (Climate == "tropics" && (Density1 + Density2) > 0.6)
             {
-                Precipitations = 0.2 + (Rnd.NextDouble() / 2.0);
-                Aerosol = Rnd.NextDouble() * 2.0;
+                Precipitations = Rnd.NextDouble() / 2.0;
+                //Aerosol = Rnd.NextDouble() * 2.0;
             }
 
             var Cloud2Bot = Rnd.Next(1500, 6500);
